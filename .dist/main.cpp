@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 void displaymenu(){
     using namespace std;
@@ -15,6 +16,45 @@ void displaymenu(){
 
 
 int main(){
+    int choice;
     displaymenu();
+
+    std::cout << "Please enter option";
+    std::cin >> choice;
+
+    switch (choice){
+    case 1:
+        secToHour(); break;
+    case 2:
+        secToMin(); break;
+    case 3:
+        minToHour(); break;
+    case 4:
+        hourToSec(); break;
+    case 5:
+        minToSec(); break;
+    case 6:
+        return 0;
+
+    default: std::cout<<"invalid"; break;
+
+    }
+
     return 0;
+}
+
+int secToHour(){
+
+}
+int secToMin(){
+
+}
+int minToHour(){
+
+}
+int hourToSec(){
+
+}
+int minToSec(){
+
 }
