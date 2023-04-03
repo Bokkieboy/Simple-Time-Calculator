@@ -14,6 +14,21 @@ void displaymenu(){
     cout<<" 6.Exit \n";
 }
 
+int secToHour(){
+
+}
+int secToMin(){
+
+}
+int minToHour(){
+
+}
+int hourToSec(){
+
+}
+int minToSec(){
+
+}
 
 int main(){
     int choice;
@@ -43,18 +58,3 @@ int main(){
     return 0;
 }
 
-int secToHour(){
-
-}
-int secToMin(){
-
-}
-int minToHour(){
-
-}
-int hourToSec(){
-
-}
-int minToSec(){
-
-}
