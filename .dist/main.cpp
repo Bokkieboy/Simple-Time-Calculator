@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-void displaymenu(){
+void displaymenu(){ //This is the function to display the menu where the user can choose what convertion they would like to use
     using namespace std;
-    cout<<"===================================================== \n";
+    cout<<"\n ===================================================== \n";
     cout<<" \t\tTime Calc \t \n ";
     cout<<"===================================================== \n";
     cout<<" 1.Convert seconds to hours\n";
@@ -14,36 +14,60 @@ void displaymenu(){
     cout<<" 6.Exit \n";
 }
 
-int secToHour(){
+int secToHour(){ //This function asks for the input of seconds and gives back the hours
     int seconds, result;
     using namespace std;
 
-    cout << "How many seconds?";
+    cout << "How many seconds? ";
     cin >> seconds;
-    result = seconds * 60;
-    cout << result, "\n";
+    result = seconds / 60 / 60;
+    cout << result;
 }
-int secToMin(){
+int secToMin(){ //This function asks for the input of seconds and gives back the minutes
+    int seconds, result;
+    using namespace std;
 
+    cout << "How many seconds? ";
+    cin >> seconds;
+    result = seconds / 60;
+    cout << result;
 }
-int minToHour(){
+int minToHour(){ //This function asks for the input of minutes and gives back the hours
+    int minute, result;
+    using namespace std;
 
+    cout << "How many minutes? ";
+    cin >> minute;
+    result = minute / 60;
+    cout << result;
 }
-int hourToSec(){
+int hourToSec(){ //This function asks for the input of hours and gives back the seconds
+    int hour, result;
+    using namespace std;
 
+    cout << "How many hours? ";
+    cin >> hour;
+    result = hour * 60 * 60;
+    cout << result;
 }
-int minToSec(){
+int minToSec(){ //This function asks for the input of minutes and gives back the seconds
+    int min, result;
+    using namespace std;
 
+    cout << "How many minutes? ";
+    cin >> min;
+    result = min * 60;
+    cout << result;
 }
 
 int main(){
     int choice;
     displaymenu();
 
-    std::cout << "Please enter option ";
+    std::cout << "Please enter option "; //Asks the user for an option
     std::cin >> choice;
 
-    switch (choice){
+    switch (choice){ //Uses switch case to send the user to a specific funciton
     case 1:
         secToHour(); break;
     case 2:
@@ -57,7 +81,7 @@ int main(){
     case 6:
         return 0;
 
-    default: std::cout<<"invalid"; break;
+    default: std::cout<<"invalid"; break; //If the wrong value is entered the program resets
 
     }
 
