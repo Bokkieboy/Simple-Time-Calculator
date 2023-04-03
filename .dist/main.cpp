@@ -15,7 +15,13 @@ void displaymenu(){
 }
 
 int secToHour(){
+    int seconds, result;
+    using namespace std;
 
+    cout << "How many seconds?";
+    cin >> seconds;
+    result = seconds * 60;
+    cout << result, "\n";
 }
 int secToMin(){
 
@@ -34,7 +40,7 @@ int main(){
     int choice;
     displaymenu();
 
-    std::cout << "Please enter option";
+    std::cout << "Please enter option ";
     std::cin >> choice;
 
     switch (choice){
